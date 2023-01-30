@@ -185,6 +185,20 @@
                         "node" : 7,
                         "path" : "translation"
                     }
+                },
+                {
+                    "sampler" : 1,
+                    "target" : {
+                        "node" : 7,
+                        "path" : "rotation"
+                    }
+                },
+                {
+                    "sampler" : 2,
+                    "target" : {
+                        "node" : 7,
+                        "path" : "scale"
+                    }
                 }
             ],
             "name" : "yazirusiAction",
@@ -193,6 +207,16 @@
                     "input" : 83,
                     "interpolation" : "LINEAR",
                     "output" : 84
+                },
+                {
+                    "input" : 85,
+                    "interpolation" : "LINEAR",
+                    "output" : 86
+                },
+                {
+                    "input" : 85,
+                    "interpolation" : "LINEAR",
+                    "output" : 87
                 }
             ]
         }
@@ -1390,9 +1414,9 @@
         {
             "bufferView" : 83,
             "componentType" : 5126,
-            "count" : 201,
+            "count" : 2001,
             "max" : [
-                8.333333333333334
+                83.33333333333333
             ],
             "min" : [
                 0
@@ -1402,7 +1426,31 @@
         {
             "bufferView" : 84,
             "componentType" : 5126,
-            "count" : 201,
+            "count" : 2001,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 85,
+            "componentType" : 5126,
+            "count" : 2,
+            "max" : [
+                83.33333333333333
+            ],
+            "min" : [
+                8.333333333333334
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 86,
+            "componentType" : 5126,
+            "count" : 2,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 87,
+            "componentType" : 5126,
+            "count" : 2,
             "type" : "VEC3"
         }
     ],
@@ -1824,18 +1872,33 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 804,
+            "byteLength" : 8004,
             "byteOffset" : 6476476
         },
         {
             "buffer" : 0,
-            "byteLength" : 2412,
-            "byteOffset" : 6477280
+            "byteLength" : 24012,
+            "byteOffset" : 6484480
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8,
+            "byteOffset" : 6508492
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 32,
+            "byteOffset" : 6508500
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 24,
+            "byteOffset" : 6508532
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 6479692,
+            "byteLength" : 6508556,
             "uri" : "gpssensa.bin"
         }
     ]
